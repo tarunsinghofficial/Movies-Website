@@ -1,0 +1,218 @@
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+html, body {
+  height: 100%;
+}
+
+body  {
+  font-family: 'Dosis', sans-serif;
+  background-color: #22272e;
+  color: #fff;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+}
+pre{
+  color: #fff;
+
+}
+hr {
+  background-color: #fff;
+}
+
+#footer {
+  padding-top: 10px;
+  position: static;
+  z-index: 5;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  /* Footer height */
+}
+
+#footer a{
+  color:#fff;
+}
+#About {
+min-height: 65vh;
+width: 100vw;
+font-size: 1.2rem;
+background-image: url('../backgrounds/DominicanRep_unsplash.jpg');
+background-position: center;
+background-size: cover;
+clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 95%);
+
+}
+#About >div{
+  border-radius: 10px 10px 10px 0px}
+.active{text-decoration: underline;}
+
+.text-5xl { font-size: 3rem; }
+.nav {
+  position: fixed;
+  width: 100%;
+  z-index: 101;
+  background-color: #22272e;
+  color: #fff;
+  box-shadow: 0 5px 25px 0 rgb(0 0 0 / 30%);
+  text-transform: uppercase;
+}
+
+/* un used
+.post {
+  background-color: #f3f3f3;
+  width: 100%;
+  height: 28vh;
+  color: black;
+  position: 50%, 0;
+}
+*/
+
+/* Slider */
+
+.card.slide{
+  height: 100%;
+  transition: transform .3s ease-in-out;
+  z-index: 0;
+  min-height: 150px;
+}
+
+.card-body.people {
+  color: black;
+  min-height: 150px;
+  padding: .5rem !important;
+  padding-top: 1.25rem !important;
+}
+.card p{
+  color: black;
+}
+.card.slide:hover {
+  z-index: 5;
+  transform: scale(1.1);
+}
+
+.card span {
+  scale: 10%;
+  color: #1a212a;
+}
+
+.card:hover>.card-img-overlay {
+  visibility: visible;
+  
+  width: 100%;
+  display: block;
+  bottom: 0 !important;
+  transition: .4s ease-out;
+  background-color: rgba(255, 255, 255, 0.3);
+  font-size: 1rem;
+  padding: 0 auto ;
+}
+
+.card-img-overlay {
+  color: black !important;
+  backdrop-filter: blur(5px);
+  height: fit-content;
+
+  overflow: hidden;
+  transition: .2s ease-in;
+  top:auto;
+  visibility: hidden;
+}
+
+.swiper-container {
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+}
+
+.slide-description {
+  padding-top: 5px;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+.slide-title {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.slide-info>* {
+  font-size: 1.rem;
+  vertical-align: baseline;
+}
+
+.slide-info-date {
+  font-size: .9em;
+}
+
+/*end*/
+
+.details-data>* {
+  margin-left: 1rem;
+}
+
+.details-data .title {
+  margin-top: 1.5rem;
+}
+
+.details-data>.description {
+  margin-top: 3rem;
+  font-size: 1.3rem;
+  margin-right: 5px;
+}
+
+.details-header {
+  max-height: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.details-header img {
+  margin: 1.5rem 0;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.details-header .info, span {
+  margin-right: 15px;
+}
+
+.filter {
+  backdrop-filter: brightness(.2) contrast(.9);
+  width: 100%;
+  position: relative;
+}
+
+.center {
+  padding: 30vh 0;
+  text-align: center;
+}
+
+.carouselmovie {
+  padding: 1.5rem 0
+}
+
+/*youtube frame*/
+
+.video-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.video-container::after {
+  padding-top: 56.25%;
+  display: block;
+  content: '';
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
